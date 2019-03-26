@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categorias">
+        <item>----</item>
+        <item>Lácteos</item>
+        <item>Frutas</item>
+        <item>Huevos</item>
+        <item>Legumbres</item>
+        <item>Lácteos</item>
+        <item>Cereales</item>
+        <item>Bebidas</item>
+        <item>Frutos secos y semillas</item>
+        <item>Verduras y hortalizas</item>
+    </string-array>
+</resources>

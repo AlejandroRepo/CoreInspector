@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="_1_categoria">1.Category:</string>
+    <string name="intro2">Choose some food and we will see wheter it is heart-healthy or not!</string>
+    <string name="intro1">Hi! I am Core and I know EVERYTHING about nutrition!</string>
+    <string name="letssee">That one? Uhhh- Lets see!</string>
+    <string name="error">Dang! Something went wrong!</string>
+    <string name="ok">Careful! That food can be unhealthy if you abuse it. I suggest moderation!.</string>
+    <string name="bad">Oh, no! That food is not heart-healthy... too bad... I loved it...</string>
+    <string name="drinks">There is no such thing as a healthy amount of booze, I am afraid!</string>
+    <string name="veggies">Very healthy and nutritious! Learn to properly cook them!</string>
+    <string name="eggs">Eggs are very nutritious! Do not worry about your chollesterol, that was a myth!</string>
+    <string name="legum">A must in every diet! Dont forget about them!</string>
+    <string name="milk">Dairies can be healthy, but some of them should be avoided!</string>
+    <string name="fruits">Fruits are easy to judge! Just eat as much as you want! </string>
+    <string name="language">Language</string>
+    <string name="gal">Galician</string>
+    <string name="eng">English</string>
+    <string name="spa">Spanish</string>
+    <string name="great">Great! That food is perfectly heart-healthy!</string>
+    <string name="app_name">CoreInspector</string>
+    <string name="bread">Tricky, always go for the wholegrain variants!</string>
+    <string name="thx">Thanks, Core!</string>
+    <string name="letsgo">Lets go!</string>
+    <string name="food">2.Food</string>
+    <string name="moreinfo">Touch the icon for more info</string>
+    <string name="category">1.Category:</string>
+    <string name="veredict">Core veredict:</string>
+    <string name="seeds">An unmatched source of proteins and energy!</string>
+    <string name="selpls">Select one element from the list</string>
+    <string name="foodSel">Food:</string>
+    <string name="txtVeredict">--</string>
+    <string name="azucar">Sugar</string>
+    <string name="grasas">Fats</string>
+    <string name="sodio">Sodium</string>
+    <string name="healthy">Healthy!</string>
+    <string name="semihealthy">Semi healthy</string>
+    <string name="unhealthy">Unhealthy...</string>
+    <string name="retry">Lets see another!</string>
+    <string name="shootCowbow">Just come at me, bro!</string>
+    <string name="author">Written by Alejandro - 2ºDAM</string>
+</resources>

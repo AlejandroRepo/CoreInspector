@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="intro2">Elixe un alimento da lista e veremos si é cardio-saludable!</string>
+    <string name="intro1">Qué hay, rapás! Chámome Core... e seino todo sobre nutrición!</string>
+    <string name="letssee">¿Ese? ¡Uhmm!! Imos ver...</string>
+    <string name="error">Diantres! Algo saiu mal...</string>
+    <string name="ok">Coidado! Non compre abusar de este alimento. Recomendo moderación.</string>
+    <string name="bad">Oh, non! Este alimento non é cardiosaludable... lástima, co bon que estaba...</string>
+    <string name="drinks">O alcohol e malo para a saúde, non importa a cantidade.</string>
+    <string name="veggies">Teñen mala fama, pero son moi boas e nutritivas. Aprende a cociñar con elas!</string>
+    <string name="bread">Os cereis integrais son moi saludables! Os brancos... non tanto.</string>
+    <string name="eggs">Os ovos son moi nutritivos. O conto de que suben o colesterol é un mito!</string>
+    <string name="legum">As legumes e hortalizas deberían ser parte de toda dieta. Non as esquezas!</string>
+    <string name="milk">Os lacteos non teñen nada de malo, pero non compre abusar de certos productos.</string>
+    <string name="fruits">A froita é sinxela de avaliar: toda canta queiras comer é boa para tí!</string>
+    <string name="language">Idioma</string>
+    <string name="gal">Galego</string>
+    <string name="spa">Castelán</string>
+    <string name="eng">Inglés</string>
+    <string name="great">Xenial! Ese alimento é perfectamente cardiosaludable!</string>
+    <string name="_1_categoria">1:Categoria:</string>
+    <string name="thx">¡Grazas, Core!</string>
+    <string name="letsgo">¡Imos alá!</string>
+    <string name="food">2.Alimento</string>
+    <string name="moreinfo">Toca o icono para mais información</string>
+    <string name="category">1.Categoria:</string>
+    <string name="veredict">Veredicto de Core:</string>
+    <string name="seeds">Unha fonte de enerxía e de proteínas sin par!</string>
+    <string name="selpls">Elixe un elemento da lista</string>
+    <string name="foodSel">Alimento:</string>
+    <string name="txtVeredict">--</string>
+    <string name="azucar">Azucre</string>
+    <string name="grasas">Graxas</string>
+    <string name="sodio">Sodio</string>
+    <string name="healthy">Saludable!</string>
+    <string name="semihealthy">Semi saludable</string>
+    <string name="unhealthy">Non saludable...</string>
+    <string name="retry">¡Vexamos outro!</string>
+    <string name="shootCowbow">Outro? Os que queiras!</string>
+    <string name="author">Escrito por Alejandro - 2ºDAM ordinario</string>
+</resources>

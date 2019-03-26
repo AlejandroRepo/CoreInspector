@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp"
+    android:weightSum="4"
+    android:orientation="vertical"
+    android:background="@drawable/background2"
+    tools:context="com.example.daelin.foodinspector.Main">
+
+    <LinearLayout
+        android:id="@+id/bloque"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/primero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ocuro"
+        android:orientation="horizontal">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:onClick="bother"
+            android:scaleType="center"
+            android:src="@drawable/pixhabla3" />
+
+        <com.example.daelin.foodinspector.CustomTextView
+            android:id="@+id/dialogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/ocuro"
+            android:text=""
+            android:textColor="@color/blanco"
+            android:textIsSelectable="false"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/segundo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/ocuro"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.daelin.foodinspector.CustomTextView
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/category"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/SPcategorias"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:entries="@array/categorias"
+                android:scrollbarStyle="insideInset"
+                android:spinnerMode="dropdown" />
+
+            <ImageButton
+                android:id="@+id/icono"
+                style="@style/Widget.AppCompat.ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/ocuro"
+                android:contentDescription="food category @android:string/fingerprint_icon_content_description"
+                android:onClick="masInfor"
+                app:srcCompat="@drawable/icononada" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.example.daelin.foodinspector.CustomTextView
+        android:text="@string/moreinfo"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:id="@+id/masinfo"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/tercero"
+        android:layout_width="match_parent"
+        android:layout_height="361dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/ocuro"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.example.daelin.foodinspector.CustomTextView
+                android:id="@+id/editText2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/food"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/SPalimentos"
+            style="@style/Widget.AppCompat.ListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:choiceMode="singleChoice" />
+
+        <Button
+            android:id="@+id/botonGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@color/ocuro"
+            android:enabled="false"
+            android:onClick="opera"
+            android:text="@string/selpls"
+            android:textColor="@color/blanco"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cuarto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="@android:integer/config_longAnimTime"
+            android:progressDrawable="@color/azulito" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <com.example.daelin.foodinspector.CustomTextView
+                android:id="@+id/txtAlim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/foodSel"
+                android:textAlignment="center"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ocuro"
+            android:gravity="center">
+
+            <com.example.daelin.foodinspector.CustomTextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/veredict"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.example.daelin.foodinspector.CustomTextView
+                android:id="@+id/veredictTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="--"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/resultIco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vernormal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/resultNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.example.daelin.foodinspector.CustomTextView
+                android:id="@+id/txtazucartxt"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:drawableStart="@drawable/sugar"
+                android:gravity="center"
+                android:text="@string/azucar"
+                android:textSize="17sp" />
+
+            <com.example.daelin.foodinspector.CustomTextView
+                android:id="@+id/txtgrasastxt"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:drawableStart="@drawable/grasas"
+                android:gravity="center"
+                android:text="@string/grasas"
+                android:textSize="17sp" />
+
+            <com.example.daelin.foodinspector.CustomTextView
+                android:id="@+id/txtsodiotxt"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:drawableStart="@drawable/sodio"
+                android:gravity="center"
+                android:shadowColor="@color/ocuro"
+                android:text="@string/sodio"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.example.daelin.foodinspector.CustomTextView
+                android:id="@+id/txtazucar"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="--"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <com.example.daelin.foodinspector.CustomTextView
+                android:id="@+id/txtgrasas"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="--"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <com.example.daelin.foodinspector.CustomTextView
+                android:id="@+id/txtsodio"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="--"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRetry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/ocuro"
+            android:onClick="reTry"
+            android:text="@string/retry"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/ocuro"
+            android:onClick="back"
+            android:text="@string/thx"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
